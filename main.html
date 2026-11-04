@@ -8,7 +8,7 @@
 <body>
 
     <div class="container">
-        <form onsubmit="getFormValue(event)">
+        <form onsubmit="getFormvalue(event)">
             <input type="text" placeholder="first name" name="fname">
             <input type="text" placeholder="last name" name="lname">
             <input type="submit" value="submit">
@@ -31,7 +31,7 @@
     
 
     <script>
-        function getFormValue(event){
+        function getFormvalue(event){
             event.preventDefault()
 
             const fname = document.querySelector(`[name="fname"]`).value.trim()
